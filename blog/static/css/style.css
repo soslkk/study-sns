@@ -1,0 +1,35 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+html{
+  font-family:"Noto Sans KR","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size:15px;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+}
+#banner{
+  background:#2d4cb6;
+  padding:70px 0;
+}
+#banner h2{
+  font-size:2.6rem;
+  font-weight: 300;
+  margin:0;
+  letter-spacing: -1.1px;
+}
+#banner p{
+  margin:0.6rem 0 2rem;
+  font-weight: 700;
+  font-size:1.7rem;
+  letter-spacing: -0.6px;
+}
+#banner .btn-large{
+  padding:0 3rem;
+  font-size:1.4rem;
+}
+#base-nav .brand-logo{
+  color:#2d4cb6;
+  font-weight:900;
+  font-size:26px;
+}
+#base-nav ul a{
+  color:#666;
+}

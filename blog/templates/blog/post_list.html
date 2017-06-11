@@ -1,0 +1,19 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+  <div id="banner">
+    <div class="container">
+      <h2 class="yellow-text">전공불문, 우리의 아이디어를 우리의 손으로</h2>
+      <p class="white-text">원하는 장소와 시간에 맞는 프로그래밍 스터디를 찾아보세요.</p>
+      <div class="btn-large waves-effect waves-light grey darken-4 yellow-text">자세히 보기</div>
+    </div>
+  </div>
+  <div class="container">
+  {% for post in posts %}
+      <div>
+          <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+          <p>published: {{ post.published_date }}</p>
+          <p>{{ post.text|linebreaksbr }}</p>
+      </div>
+  {% endfor %}
+</div>
+{% endblock %}
